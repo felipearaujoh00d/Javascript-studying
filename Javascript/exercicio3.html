@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>What Can Javascript Do?</h1>
+
+<p id="demo">JavaScript can change the style of an HTML elemente.</p>
+
+<script>
+    function myFunction(){
+        var x = document.getElementById("demo");
+
+        if (x.style.fontSize == "30px"){x.style.fontSize = "15px";x.style.color = "black";}
+        else { x.style.fontSize = "30px";x.style.color = "red";}
+    }
+</script>
+
+<button type="button" onClick="myFunction()"> Click Me! </button>
+
+</body>
+</html>
